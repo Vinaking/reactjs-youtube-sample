@@ -1,0 +1,137 @@
+.header {
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(217, 212, 212);
+  border-bottom-style: solid;
+  background-color: white;
+}
+
+.left-section {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-icon {
+  height: 25px;
+}
+
+.hamburger-menu {
+  margin: 0 25px 0 25px;
+}
+
+.middle-section {
+  flex: 1;
+  margin: 0 30px 0 30px;
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+}
+
+.search-input {
+  font-size: 14px;
+  height: 36px;
+  width: 0;
+  flex:1;
+  border-color: rgb(208, 206, 206);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  padding-left: 10px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+
+}
+
+.search-input::placeholder {
+  font-size: 14px;
+  color: gray;
+}
+
+.search-button {
+  height: 40px;
+  width: 60px;
+  border-color: rgb(208, 206, 206);
+  border-width: 1px;
+  border-style: solid;
+  margin-left: -3px;
+  margin-right: 12px;
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+}
+
+.voice-search-button {
+  height: 42px;
+  width: 42px;
+  border-radius: 20px;
+  border: none;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.search-button,
+.voice-search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip {
+  background-color: rgb(74, 71, 71);
+  color: white;
+  padding: 8px 10px 8px 10px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -38px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip {
+  opacity: 1;
+}
+
+.right-section {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+
+}
+
+.right-section button {
+  height: 40px;
+  border: none;
+  background-color: white;
+  position: relative;
+}
+
+.notification-count {
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  padding: 3px 6px 3px 6px;
+  border-radius: 15px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  
+}
+
+.my-channel {
+  height: 35px;
+  width: 35px;
+}
